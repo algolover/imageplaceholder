@@ -2,7 +2,12 @@
 <html>
 <head>
 	<title>Placeholder</title>
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!--<script src="js/bootstrap.min.js"></script>-->
+
+
+
+	
 </head>
 <body>
 	<div class="container-fluid	">

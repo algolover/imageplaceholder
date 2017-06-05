@@ -101,7 +101,7 @@ imagecolorallocate($image,$img_bg_color[0],$img_bg_color[1],$img_bg_color[2]);
 
 
 imagettftext($image,$fontsize,0,$pos,$image_height/2, imagecolorallocate($image,$img_txt_color[0],$img_txt_color[1],$img_txt_color[2])
-,"./fonts/"."$image_font_rel", $text);
+,"./fonts/"."$image_font", $text);
 
 
 

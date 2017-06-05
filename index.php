@@ -20,7 +20,7 @@
 		</div>
 
 
-<form method="GET" action = "generate.php">
+<form method="GET" action = "./generate.php">
 	<div class="row">
 			<div class="form-group col-sm-2 col-sm-offset-4">
 

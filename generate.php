@@ -5,13 +5,14 @@ header('Content-type: image/jpeg');
 if($_GET['Width']=='' || $_GET['Height']=="")
 {
 
-	header("Location:index.php");
+	header("Location:./index.php");
 
 }
 
 $image_width=$_GET['Width'];
 $image_height=$_GET['Height'];
 $image_font=$_GET['font'] .".ttf";
+$image_font_rel="./".$image_font;
 $image_imgcolor=$_GET['imgcolor'];
 $image_textcolor=$_GET['textcolor'];
 
@@ -85,7 +86,7 @@ else{
 }
 
 // $bbox takes input relative path
-$image_font_url="fonts/"."$image_font";
+$image_font_url="./fonts/"."$image_font";
 
 // bbox is the bound box which bounds the text and returns all corner of rectangle starting from lower left and
 // moves counter clockwise.
@@ -100,7 +101,7 @@ imagecolorallocate($image,$img_bg_color[0],$img_bg_color[1],$img_bg_color[2]);
 
 
 imagettftext($image,$fontsize,0,$pos,$image_height/2, imagecolorallocate($image,$img_txt_color[0],$img_txt_color[1],$img_txt_color[2])
-,"fonts/"."$image_font", $text);
+,"./fonts/"."$image_font_rel", $text);
 
 
 

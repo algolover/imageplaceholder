@@ -5,7 +5,7 @@ header('Content-type: image/jpeg');
 if($_GET['Width']=='' || $_GET['Height']=="")
 {
 
-	header("Location:./index.php");
+   header("Location:./index.php");
 
 }
 
@@ -18,8 +18,8 @@ $image_textcolor=$_GET['textcolor'];
 
 
 if ( !isset($_GET['Width']) || !isset($_GET['Height'])){
-	$image_width=500;
-	$image_height=500;
+   $image_width=500;
+   $image_height=500;
 
 }
 
@@ -30,7 +30,7 @@ if($_GET['textcolor']==''){
 $hex2="#969696";
 }
 else{
-	$hex2=$_GET['textcolor'];
+   $hex2=$_GET['textcolor'];
 
 }
 
@@ -78,10 +78,10 @@ $img_txt_color=hextorgb($hex2);
 
 
 if ($image_width<=$image_height){
-	$fontsize=(0.05*$image_width);
+   $fontsize=(0.05*$image_width);
 }
 else{
-	$fontsize=(0.05*$image_height);
+   $fontsize=(0.05*$image_height);
 
 }
 
@@ -101,7 +101,7 @@ imagecolorallocate($image,$img_bg_color[0],$img_bg_color[1],$img_bg_color[2]);
 
 
 imagettftext($image,$fontsize,0,$pos,$image_height/2, imagecolorallocate($image,$img_txt_color[0],$img_txt_color[1],$img_txt_color[2])
-,"./fonts/"."$image_font", $text);
+,"./fonts/"."$image_font_rel", $text);
 
 
 
